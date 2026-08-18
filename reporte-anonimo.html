@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Formulario confidencial de reporte anónimo para la Línea de Seguridad de CEMATIZ."
+    />
+    <title>CEMATIZ | Reporte anónimo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="css/styles.css" as="style" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="report-page">
+    <header class="report-header" aria-label="Encabezado de reporte anónimo">
+      <a class="report-back" href="index.html">← Regresar al sitio</a>
+      <a class="report-brand" href="index.html" aria-label="Volver al inicio de CEMATIZ">
+        <img src="img/Logo Cematiz.png" alt="CEMATIZ" />
+      </a>
+    </header>
+
+    <main class="report-main">
+      <section class="report-hero" aria-labelledby="report-title">
+        <div class="report-intro">
+          <p class="report-kicker">LÍNEA DE SEGURIDAD</p>
+          <h1 id="report-title">Reporte anónimo</h1>
+          <p>
+            Este canal está diseñado para recibir reportes de forma confidencial. No solicitamos nombre, teléfono ni correo. La información será revisada con responsabilidad, discreción y enfoque preventivo.
+          </p>
+        </div>
+
+        <form class="report-form" data-report-form novalidate>
+          <div class="form-honeypot" aria-hidden="true">
+            <label for="report-website">Sitio web</label>
+            <input id="report-website" name="website" type="text" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <div class="form-row form-row-full">
+            <label for="project-code">Código de proyecto</label>
+            <input id="project-code" name="project_code" type="text" placeholder="Ej. CEM-2026-001" required />
+          </div>
+
+          <div class="form-row form-row-full">
+            <label>Sobre las evidencias</label>
+            <div class="report-file-zone">
+              <span>Se deberán adjuntar de manera manual por correo.</span>
+              <p>Al completar la descripción de lo sucedido y enviar el reporte, se abrirá en automático tu correo electrónico para poder adjuntar fotos y/o videos.</p>
+            </div>
+          </div>
+
+          <div class="form-row form-row-full">
+            <label for="report-description">Descripción de lo sucedido</label>
+            <textarea
+              id="report-description"
+              name="description"
+              rows="8"
+              placeholder="Describe los hechos con el mayor detalle posible: qué ocurrió, cuándo, dónde y quiénes estuvieron involucrados, si lo sabes."
+              required
+            ></textarea>
+          </div>
+
+          <button class="button button-primary report-submit" type="submit">ENVIAR REPORTE ANÓNIMO</button>
+          <p class="report-status" role="status" aria-live="polite" data-report-status></p>
+          <p class="report-privacy">
+            Tu reporte será recibido de forma anónima. No solicitamos datos personales. La información será tratada con confidencialidad y será utilizada para prevenir, atender y dar seguimiento a situaciones que afecten la seguridad, integridad o bienestar en obra.
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <script>
+      const reportForm = document.querySelector("[data-report-form]");
+
+      reportForm?.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const status = reportForm.querySelector("[data-report-status]");
+        const projectCode = reportForm.querySelector("#project-code");
+        const description = reportForm.querySelector("#report-description");
+        const honeypot = reportForm.querySelector('input[name="website"]');
+        let isValid = true;
+
+        // TODO: Para producción, conectar este formulario a un backend seguro para enviar el reporte y las evidencias directamente a contacto@cematiz.com.mx sin depender del cliente de correo del usuario.
+        // Al integrar backend: validar honeypot en servidor, aplicar límite por IP,
+        // considerar Cloudflare Turnstile o captcha invisible y almacenar evidencias de forma segura.
+        if (honeypot?.value.trim()) {
+          return;
+        }
+
+        [projectCode, description].forEach((field) => {
+          const row = field?.closest(".form-row");
+          const fieldIsValid = Boolean(field?.value.trim());
+          row?.classList.toggle("has-error", !fieldIsValid);
+          isValid = isValid && fieldIsValid;
+        });
+
+        if (!status) {
+          return;
+        }
+
+        if (!isValid) {
+          status.textContent = "Completa el código de proyecto y la descripción antes de enviar.";
+          status.className = "report-status is-error";
+          return;
+        }
+
+        const evidenceNote = "Se deberán adjuntar de manera manual por correo.";
+        const subject = "REPORTE LINEA DE SEGURIDAD";
+        const body = `REPORTE LÍNEA DE SEGURIDAD CEMATIZ
+
+Código de proyecto:
+${projectCode.value.trim()}
+
+Descripción de lo sucedido:
+${description.value.trim()}
+
+Evidencias:
+${evidenceNote}
+
+Aviso:
+Este reporte se realiza de forma anónima. No se solicitaron datos personales.`;
+        const mailtoUrl = `mailto:contacto@cematiz.com.mx?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+        status.textContent = "Tu cliente de correo se abrirá automáticamente.";
+        status.className = "report-status is-success";
+        window.location.href = mailtoUrl;
+      });
+
+      reportForm?.addEventListener("input", (event) => {
+        const field = event.target;
+        const status = reportForm.querySelector("[data-report-status]");
+
+        if (field.matches("#project-code, #report-description")) {
+          field.closest(".form-row")?.classList.toggle("has-error", !field.value.trim());
+        }
+
+        if (status) {
+          status.textContent = "";
+          status.className = "report-status";
+        }
+      });
+    </script>
+  </body>
+</html>

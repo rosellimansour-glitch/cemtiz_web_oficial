@@ -1,0 +1,947 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CEMATIZ ofrece construcción, servicios eléctricos especializados, infraestructura, HVAC, mantenimiento, operación e ingeniería para proyectos industriales, comerciales y residenciales."
+    />
+    <title>CEMATIZ | Construcción e instalaciones eléctricas</title>
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="acss/styles.css" as="style" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <button
+        class="menu-trigger"
+        type="button"
+        aria-controls="site-navigation"
+        aria-expanded="false"
+        aria-label="Abrir menú principal"
+        data-nav-toggle
+      >
+        <span class="menu-trigger-icon" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <span class="menu-trigger-text">MENÚ</span>
+      </button>
+
+      <a class="brand header-logo" href="#inicio" aria-label="CEMATIZ inicio">
+        <!-- Logo completo inicial. Sustituir por img/cematiz-blanco.png si se renombra el archivo oficial. -->
+        <img
+          class="logo-full"
+          src="img/Cematiz blanco.png"
+          alt="CEMATIZ"
+          data-fallback="CEMATIZ"
+        />
+        <!-- Isotipo con scroll. Sustituir por img/isotipo-cematiz-blanco.png o img/isotipo-cematiz.svg cuando exista. -->
+        <img
+          class="logo-symbol"
+          src="img/Logo blanco.png"
+          alt=""
+          aria-hidden="true"
+          data-fallback="C"
+        />
+      </a>
+
+      <a class="header-contact" href="#contacto">CONTACTO</a>
+
+      <nav
+        class="site-nav"
+        id="site-navigation"
+        data-nav
+        aria-label="Menú principal"
+        aria-hidden="true"
+      >
+        <div class="site-nav-inner">
+          <button
+            class="menu-close"
+            type="button"
+            aria-label="Cerrar menú principal"
+            data-nav-close
+          >
+            <span aria-hidden="true"></span>
+            <span>CERRAR</span>
+          </button>
+
+          <div class="menu-links">
+            <a href="#acerca">Nosotros</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#seguridad">Línea de seguridad</a>
+            <a href="#crm">Buildpeer</a>
+          </div>
+        </div>
+      </nav>
+      <div class="nav-overlay" data-nav-overlay hidden></div>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-video-wrap" aria-hidden="true">
+          <!-- Video principal del hero: videos/CEMATIZ_VIDEO.mp4. Si falta, el hero conserva un fondo naranja de respaldo. -->
+          <video class="hero-video" autoplay muted loop playsinline preload="metadata" data-hero-video>
+            <source src="videos/CEMATIZ HERO1.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <div class="container hero-content">
+          <h1 class="hero-title" id="hero-title">Construcciones e instalaciones eléctricas</h1>
+          <div class="hero-actions" aria-label="Acciones principales">
+            <a class="button button-primary" href="#proyectos">Conoce nuestros proyectos</a>
+          </div>
+          <a class="hero-scroll" href="#acerca" aria-label="Bajar a la sección Acerca de nosotros"></a>
+        </div>
+      </section>
+
+      <section class="section about-section award-section" id="acerca" aria-labelledby="about-title">
+        <div class="container about-layout award-layout">
+          <div class="section-copy award-copy reveal">
+            <p class="award-eyebrow">Constructor Emprendedor del año 2025</p>
+            <h2 class="award-title" id="about-title">GANADORES</h2>
+            <p class="award-text">
+              Premio otorgado por la Cámara Mexicana de la Industria de la
+              Construcción (CMIC) a CEMATIZ S.A. de C.V.
+            </p>
+            <p class="award-text">
+              Cematiz, empresa de construcción y servicios eléctricos
+              especializados en áreas industriales, comerciales y residenciales.
+            </p>
+          </div>
+
+          <figure class="about-visual award-visual reveal">
+            <video class="award-video" autoplay muted loop playsinline preload="metadata" disablepictureinpicture disableremoteplayback controlslist="nodownload noplaybackrate noremoteplayback" aria-label="Premio Constructor Emprendedor del año 2025 otorgado a CEMATIZ">
+              <source src="videos/PREMIO GIRANDO.mp4" type="video/mp4" />
+            </video>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section services-section" id="servicios" aria-labelledby="services-title">
+        <div class="container section-heading">
+          <p class="section-kicker">Servicios</p>
+          <h2 id="services-title">Especialidades para proyectos integrales</h2>
+          <p>
+            Cubrimos necesidades de obra, energía, operación, mantenimiento y
+            gestión con equipos técnicos preparados para entornos exigentes.
+          </p>
+        </div>
+
+        <div class="container service-grid">
+          <article class="service-card reveal">
+            <span class="service-number">01</span>
+            <h3 class="service-heading">
+              <button class="service-toggle" type="button" aria-expanded="false" aria-controls="service-desc-1">
+                <span class="service-title">Infraestructura eléctrica</span>
+                <span class="service-arrow" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="service-description" id="service-desc-1" aria-hidden="true">
+              <p>Diseño, instalación y adecuación de sistemas eléctricos para operación industrial y comercial.</p>
+            </div>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-number">02</span>
+            <h3 class="service-heading">
+              <button class="service-toggle" type="button" aria-expanded="false" aria-controls="service-desc-2">
+                <span class="service-title">Instalaciones y sistemas</span>
+                <span class="service-arrow" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="service-description" id="service-desc-2" aria-hidden="true">
+              <p>Instalaciones residenciales, comerciales e industriales con criterios de seguridad y continuidad.</p>
+            </div>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-number">03</span>
+            <h3 class="service-heading">
+              <button class="service-toggle" type="button" aria-expanded="false" aria-controls="service-desc-3">
+                <span class="service-title">Ingeniería y gestión</span>
+                <span class="service-arrow" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="service-description" id="service-desc-3" aria-hidden="true">
+              <p>Planeación, coordinación técnica, control de avances y gestión de proyectos.</p>
+            </div>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-number">04</span>
+            <h3 class="service-heading">
+              <button class="service-toggle" type="button" aria-expanded="false" aria-controls="service-desc-4">
+                <span class="service-title">Construcción integral</span>
+                <span class="service-arrow" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="service-description" id="service-desc-4" aria-hidden="true">
+              <p>Desarrollo y ejecución de obras con supervisión, documentación y control de calidad.</p>
+            </div>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-number">05</span>
+            <h3 class="service-heading">
+              <button class="service-toggle" type="button" aria-expanded="false" aria-controls="service-desc-5">
+                <span class="service-title">Mantenimiento y operación</span>
+                <span class="service-arrow" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="service-description" id="service-desc-5" aria-hidden="true">
+              <p>Servicios preventivos y correctivos para conservar disponibilidad y desempeño.</p>
+            </div>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-number">06</span>
+            <h3 class="service-heading">
+              <button class="service-toggle" type="button" aria-expanded="false" aria-controls="service-desc-6">
+                <span class="service-title">Servicios HVAC</span>
+                <span class="service-arrow" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="service-description" id="service-desc-6" aria-hidden="true">
+              <p>Sistemas de climatización, ventilación y soporte técnico para espacios críticos.</p>
+            </div>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-number">07</span>
+            <h3 class="service-heading">
+              <button class="service-toggle" type="button" aria-expanded="false" aria-controls="service-desc-7">
+                <span class="service-title">Importación de material</span>
+                <span class="service-arrow" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="service-description" id="service-desc-7" aria-hidden="true">
+              <p>Apoyo en suministro de material eléctrico y de construcción para proyectos especializados.</p>
+            </div>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-number">08</span>
+            <h3 class="service-heading">
+              <button class="service-toggle" type="button" aria-expanded="false" aria-controls="service-desc-8">
+                <span class="service-title">Gestoría y trámites</span>
+                <span class="service-arrow" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="service-description" id="service-desc-8" aria-hidden="true">
+              <p>Seguimiento documental y coordinación de permisos relacionados con la ejecución técnica.</p>
+            </div>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-number">09</span>
+            <h3 class="service-heading">
+              <button class="service-toggle" type="button" aria-expanded="false" aria-controls="service-desc-9">
+                <span class="service-title">Sistemas especiales</span>
+                <span class="service-arrow" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="service-description" id="service-desc-9" aria-hidden="true">
+              <p>Integración de FAS, CCTV, datos, BMS y telecomunicaciones para operación segura.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="proyectos" aria-labelledby="projects-title">
+        <div class="container section-heading project-heading">
+          <p class="section-kicker">Proyectos ejecutados</p>
+          <h2 id="projects-title">Galería de ejecución técnica</h2>
+          <p>
+            Experiencia en infraestructura eléctrica, data centers, HVAC,
+            construcción, urbanización y desarrollos inmobiliarios.
+          </p>
+        </div>
+
+        <div class="container project-filters" aria-label="Filtrar proyectos ejecutados">
+          <button class="filter-button is-active" type="button" data-filter="all">Todos</button>
+          <button class="filter-button" type="button" data-filter="data-centers">Data Centers</button>
+          <button class="filter-button" type="button" data-filter="infraestructura-electrica">Infraestructura eléctrica</button>
+          <button class="filter-button" type="button" data-filter="hvac">HVAC</button>
+          <button class="filter-button" type="button" data-filter="desarrollos">Desarrollos inmobiliarios</button>
+        </div>
+
+        <div class="container project-carousel" data-project-carousel>
+          <button class="project-carousel-button project-carousel-button-prev" type="button" aria-label="Proyecto anterior" data-project-prev></button>
+          <div class="project-viewport" data-project-viewport>
+            <div class="project-grid project-track" data-project-track>
+              <figure class="project-card reveal" data-project-card data-category="infraestructura-electrica construccion">
+                <video class="project-card__video" muted playsinline preload="metadata" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback" poster="img/CONAGUA-1.jpeg" aria-hidden="true">
+                  <source src="videos/CONAGUA VIDEO2.mp4" type="video/mp4">
+                </video>
+                <figcaption>
+                  <span class="project-card__category">Infraestructura eléctrica</span>
+                  <span class="project-category">CONAGUA</span>
+                  <div class="project-title-row">
+                    <strong>Energización y puesta en marca de planta de bombeo.</strong>
+                    <button class="project-detail-toggle" type="button" aria-expanded="false" aria-controls="project-desc-1" aria-label="Mostrar detalles de Energización y puesta en marca de planta de bombeo.">
+                      <span class="project-detail-arrow" aria-hidden="true"></span>
+                    </button>
+                  </div>
+                  <div class="project-description" id="project-desc-1" aria-hidden="true">
+                    <span class="project-description-field"><span class="project-description-label">Descripción:</span> Planeación y ejecución de infraestructura eléctrica en media tensión, incluyendo obra civil, tendido de líneas, montaje de postes, integración de subestaciones, alumbrado y pruebas eléctricas especializadas.</span>
+                    <span class="project-description-field"><span class="project-description-label">Personal:</span> 70 trabajadores</span>
+                    <span class="project-description-field"><span class="project-description-label">Lugar:</span> Presa Guadalupe Victoria, Durango</span>
+                    <span class="project-description-field"><span class="project-description-label">Fecha:</span> Ago de 2024 – 2025</span>
+                  </div>
+                </figcaption>
+              </figure>
+
+              <figure class="project-card reveal" data-project-card data-category="data-centers infraestructura-electrica">
+                <video class="project-card__video" muted playsinline preload="metadata" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback" poster="img/GRUPO ABITAR - 1.jpg" aria-hidden="true">
+                  <source src="videos/ABITAT VIDEO2.mp4" type="video/mp4">
+                </video>
+                <figcaption>
+                  <span class="project-card__category">Data Center</span>
+                  <span class="project-category">GRUPO ABITAT CONSTRUCTION SOLUTIONS</span>
+                  <div class="project-title-row">
+                    <strong>Data Center Microsoft COLO1</strong>
+                    <button class="project-detail-toggle" type="button" aria-expanded="false" aria-controls="project-desc-2" aria-label="Mostrar detalles de Data Center Microsoft COLO1">
+                      <span class="project-detail-arrow" aria-hidden="true"></span>
+                    </button>
+                  </div>
+                  <div class="project-description" id="project-desc-2" aria-hidden="true">
+                    <span class="project-description-field"><span class="project-description-label">Descripción:</span> Instalación de tableros y celdas de media tensión, cableado de potencia, conexión de UPS, Busway, MSB, ATS y PDU, además de pruebas funcionales y entrega de sistemas.</span>
+                    <span class="project-description-field"><span class="project-description-label">Personal:</span> 60 trabajadores</span>
+                    <span class="project-description-field"><span class="project-description-label">Lugar:</span> Parque Industrial VYNMSA, Querétaro</span>
+                    <span class="project-description-field"><span class="project-description-label">Fecha:</span> Sep de 2023 – Nov de 2023</span>
+                  </div>
+                </figcaption>
+              </figure>
+
+              <figure class="project-card reveal" data-project-card data-category="data-centers infraestructura-electrica">
+                <video class="project-card__video" muted playsinline preload="metadata" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback" poster="img/GRUPO CHUFANI-1.jpg" aria-hidden="true">
+                  <source src="videos/CHUFANI VIDEO-1.1.mp4" type="video/mp4">
+                </video>
+                <figcaption>
+                  <span class="project-card__category">Data Center</span>
+                  <span class="project-category">GRUPO CHUFANI S.A. DE C.V.</span>
+                  <div class="project-title-row">
+                    <strong>Data Center Microsoft ASU-RO-02</strong>
+                    <button class="project-detail-toggle" type="button" aria-expanded="false" aria-controls="project-desc-3" aria-label="Mostrar detalles de Data Center Microsoft ASU-RO-02">
+                      <span class="project-detail-arrow" aria-hidden="true"></span>
+                    </button>
+                  </div>
+                  <div class="project-description" id="project-desc-3" aria-hidden="true">
+                    <span class="project-description-field"><span class="project-description-label">Descripción:</span> Instalación de canalizaciones, sistemas de puesta a tierra, redes eléctricas, cableado de control y fuerza, conexión de tableros y comisionamiento de sistemas.</span>
+                    <span class="project-description-field"><span class="project-description-label">Personal:</span> 100 trabajadores</span>
+                    <span class="project-description-field"><span class="project-description-label">Lugar:</span> Data Center QRO-ASU, Querétaro</span>
+                    <span class="project-description-field"><span class="project-description-label">Fecha:</span> Ago – Oct de 2024</span>
+                  </div>
+                </figcaption>
+              </figure>
+
+              <figure class="project-card reveal" data-project-card data-category="data-centers construccion">
+                <video class="project-card__video" muted playsinline preload="metadata" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback" poster="img/DEMEK-1.jpg" aria-hidden="true">
+                  <source src="videos/DEMEK VIDEO2.mp4" type="video/mp4">
+                </video>
+                <figcaption>
+                  <span class="project-card__category">Data Center</span>
+                  <span class="project-category">DEMEK S.A. DE C.V.</span>
+                  <div class="project-title-row">
+                    <strong>Odata center SMA 04</strong>
+                    <button class="project-detail-toggle" type="button" aria-expanded="false" aria-controls="project-desc-4" aria-label="Mostrar detalles de Odata center SMA 04">
+                      <span class="project-detail-arrow" aria-hidden="true"></span>
+                    </button>
+                  </div>
+                  <div class="project-description" id="project-desc-4" aria-hidden="true">
+                    <span class="project-description-field"><span class="project-description-label">Descripción:</span> Ejecución de alumbrado y redes eléctricas interiores, instalación de luminarias, desconectores, charolas, tuberías y cableado, así como adecuaciones a instalaciones existentes.</span>
+                    <span class="project-description-field"><span class="project-description-label">Personal:</span> 30 trabajadores</span>
+                    <span class="project-description-field"><span class="project-description-label">Lugar:</span> San Miguel de Allende, Guanajuato</span>
+                    <span class="project-description-field"><span class="project-description-label">Fecha:</span> 14 de marzo – 20 de junio de 2025</span>
+                  </div>
+                </figcaption>
+              </figure>
+
+              <figure class="project-card reveal" data-project-card data-category="data-centers infraestructura-electrica">
+                <video class="project-card__video" muted playsinline preload="metadata" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback" poster="img/MAGNUM-1.jpg" aria-hidden="true">
+                  <source src="videos/MAGNUM VIDEO2.mp4" type="video/mp4">
+                </video>
+                <figcaption>
+                  <span class="project-card__category">Data Center</span>
+                  <span class="project-category">MAGNUM (MAGNET) NETWORKS S.A. DE C.V.</span>
+                  <div class="project-title-row">
+                    <strong>Odata center SMA 04</strong>
+                    <button class="project-detail-toggle" type="button" aria-expanded="false" aria-controls="project-desc-5" aria-label="Mostrar detalles de Odata center SMA 04">
+                      <span class="project-detail-arrow" aria-hidden="true"></span>
+                    </button>
+                  </div>
+                  <div class="project-description" id="project-desc-5" aria-hidden="true">
+                    <span class="project-description-field"><span class="project-description-label">Descripción:</span> Instalación y organización de cableado industrial, canalizaciones, contactos, electroductos, sistemas de tierra y protección, además de la reubicación y ajuste de circuitos.</span>
+                    <span class="project-description-field"><span class="project-description-label">Personal:</span> 35 trabajadores</span>
+                    <span class="project-description-field"><span class="project-description-label">Lugar:</span> San Miguel de Allende, Guanajuato</span>
+                    <span class="project-description-field"><span class="project-description-label">Fecha:</span> 19 de mayo – 29 de agosto de 2025</span>
+                  </div>
+                </figcaption>
+              </figure>
+
+              <figure class="project-card reveal" data-project-card data-category="construccion infraestructura-electrica">
+                <video class="project-card__video" muted playsinline preload="metadata" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback" poster="img/TREZ-1.jpg" aria-hidden="true">
+                  <source src="videos/TREZ VIDEO2.mp4" type="video/mp4">
+                </video>
+                <figcaption>
+                  <span class="project-card__category">Infraestructura eléctrica</span>
+                  <span class="project-category">TREZ ELECTROMECÁNICOS S.A. DE C.V.</span>
+                  <div class="project-title-row">
+                    <strong>PEPSICO INTEGRAL</strong>
+                    <button class="project-detail-toggle" type="button" aria-expanded="false" aria-controls="project-desc-6" aria-label="Mostrar detalles de PEPSICO INTEGRAL">
+                      <span class="project-detail-arrow" aria-hidden="true"></span>
+                    </button>
+                  </div>
+                  <div class="project-description" id="project-desc-6" aria-hidden="true">
+                    <span class="project-description-field"><span class="project-description-label">Descripción:</span> Instalación de canalización exterior, sistemas de alumbrado, líneas eléctricas, alimentación de equipos, conexiones para motores y sistemas eléctricos de emergencia.</span>
+                    <span class="project-description-field"><span class="project-description-label">Personal:</span> 15 trabajadores</span>
+                    <span class="project-description-field"><span class="project-description-label">Lugar:</span> Celaya, Guanajuato</span>
+                    <span class="project-description-field"><span class="project-description-label">Fecha:</span> 19 de julio – 19 de octubre de 2025</span>
+                  </div>
+                </figcaption>
+              </figure>
+
+              <figure class="project-card reveal" data-project-card data-category="data-centers construccion">
+                <video class="project-card__video" muted playsinline preload="metadata" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback" poster="img/BLEEDING-1.jpg" aria-hidden="true">
+                  <source src="videos/BLEEGIND VIDEO2.mp4" type="video/mp4">
+                </video>
+                <figcaption>
+                  <span class="project-card__category">Data Center</span>
+                  <span class="project-category">BLEEDING EDGE MÉXICO S.A.P.I de C.V. DATA CENTER BLEEDING</span>
+                  <div class="project-title-row">
+                    <strong>Parque industrial PYME</strong>
+                    <button class="project-detail-toggle" type="button" aria-expanded="false" aria-controls="project-desc-7" aria-label="Mostrar detalles de Parque industrial PYME">
+                      <span class="project-detail-arrow" aria-hidden="true"></span>
+                    </button>
+                  </div>
+                  <div class="project-description" id="project-desc-7" aria-hidden="true">
+                    <span class="project-description-field"><span class="project-description-label">Descripción:</span> Montaje de tableros y equipos eléctricos, instalación de canalizaciones y cableado, energización, pruebas eléctricas e integración de celdas de media tensión, BMS y telecomunicaciones.</span>
+                    <span class="project-description-field"><span class="project-description-label">Personal:</span> 70 trabajadores</span>
+                    <span class="project-description-field"><span class="project-description-label">Lugar:</span> Parque Industrial PYME, Querétaro</span>
+                    <span class="project-description-field"><span class="project-description-label">Fecha:</span> Febrero de 2025 – marzo de 2026</span>
+                  </div>
+                </figcaption>
+              </figure>
+
+              <figure class="project-card reveal" data-project-card data-category="construccion infraestructura-electrica">
+                <video class="project-card__video" muted playsinline preload="metadata" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback" poster="img/VOLVO-1.jpg" aria-hidden="true">
+                  <source src="videos/VOLVO VIDEO2.mp4" type="video/mp4">
+                </video>
+                <figcaption>
+                  <span class="project-card__category">Infraestructura eléctrica</span>
+                  <span class="project-category">AMPLIACIÓN VOLVO</span>
+                  <div class="project-title-row">
+                    <strong>AMP CONTRATISTAS ELÉCTRICOS S.A. DE C.V</strong>
+                    <button class="project-detail-toggle" type="button" aria-expanded="false" aria-controls="project-desc-8" aria-label="Mostrar detalles de AMP CONTRATISTAS ELÉCTRICOS S.A. DE C.V">
+                      <span class="project-detail-arrow" aria-hidden="true"></span>
+                    </button>
+                  </div>
+                  <div class="project-description" id="project-desc-8" aria-hidden="true">
+                    <span class="project-description-field"><span class="project-description-label">Descripción:</span> Ejecución de canalización, cableado y redes eléctricas, montaje y conexión de equipos, tableros de distribución, telecomunicaciones y sistemas de automatización BMS.</span>
+                    <span class="project-description-field"><span class="project-description-label">Personal:</span> 70 trabajadores</span>
+                    <span class="project-description-field"><span class="project-description-label">Lugar:</span> Monterrey, Nuevo León</span>
+                    <span class="project-description-field"><span class="project-description-label">Fecha:</span> Enero de 2026 – actualidad</span>
+                  </div>
+                </figcaption>
+              </figure>
+
+              <figure class="project-card reveal" data-project-card data-category="desarrollos infraestructura-electrica">
+                <video class="project-card__video" muted playsinline preload="metadata" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback" poster="img/RUBA-3.jpeg" aria-hidden="true">
+                  <source src="videos/RUBA VIDEO2.mp4" type="video/mp4">
+                </video>
+                <figcaption>
+                  <span class="project-card__category">Desarrollos inmobiliarios</span>
+                  <span class="project-category">RUBA DESARROLLOS S.A. DE C.V.</span>
+                  <div class="project-title-row">
+                    <strong>URBANIZACIÓN ELÉCTRICA DE RESIDENCIAL</strong>
+                    <button class="project-detail-toggle" type="button" aria-expanded="false" aria-controls="project-desc-9" aria-label="Mostrar detalles de URBANIZACIÓN ELÉCTRICA DE RESIDENCIAL">
+                      <span class="project-detail-arrow" aria-hidden="true"></span>
+                    </button>
+                  </div>
+                  <div class="project-description" id="project-desc-9" aria-hidden="true">
+                    <span class="project-description-field"><span class="project-description-label">Descripción:</span> Construcción de registros, nichos y bases para transformadores, instalación de tubería PAD, sistemas de tierra, cableado, transformadores y alumbrado público del desarrollo.</span>
+                    <span class="project-description-field"><span class="project-description-label">Personal:</span> 30 trabajadores</span>
+                    <span class="project-description-field"><span class="project-description-label">Lugar:</span> Angelópolis, Puebla</span>
+                    <span class="project-description-field"><span class="project-description-label">Fecha:</span> 9 de febrero de 2026 – actualidad</span>
+                  </div>
+                </figcaption>
+              </figure>
+
+              <figure class="project-card reveal" data-project-card data-category="data-centers">
+                <video class="project-card__video" muted playsinline preload="metadata" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback" poster="img/ODATA QRO-1.jpg" aria-hidden="true">
+                  <source src="videos/ODATA QRO VIDEO2.mp4" type="video/mp4">
+                </video>
+                <figcaption>
+                  <span class="project-card__category">Data Center</span>
+                  <span class="project-category">DATA CENTER</span>
+                  <div class="project-title-row">
+                    <strong>ODATA QRO.ODATA QRO.</strong>
+                    <button class="project-detail-toggle" type="button" aria-expanded="false" aria-controls="project-desc-10" aria-label="Mostrar detalles de ODATA QRO.ODATA QRO.">
+                      <span class="project-detail-arrow" aria-hidden="true"></span>
+                    </button>
+                  </div>
+                  <div class="project-description" id="project-desc-10" aria-hidden="true">
+                    <span class="project-description-field"><span class="project-description-label">Descripción:</span> Instalación de infraestructura para misión crítica, incluyendo charolas, soportes, cableado de fuerza y control, tableros eléctricos, sistemas de tierra, pruebas y comisionamiento.</span>
+                    <span class="project-description-field"><span class="project-description-label">Personal:</span> 80 trabajadores</span>
+                    <span class="project-description-field"><span class="project-description-label">Lugar:</span> Parque PYME, Querétaro</span>
+                    <span class="project-description-field"><span class="project-description-label">Fecha:</span> Sep de 2025</span>
+                  </div>
+                </figcaption>
+              </figure>
+
+              <figure class="project-card reveal" data-project-card data-category="data-centers infraestructura-electrica">
+                <video class="project-card__video" muted playsinline preload="metadata" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback" poster="img/CHUFANI-1.jpg" aria-hidden="true">
+                  <source src="videos/CHUFANI 2 VIDEO2.mp4" type="video/mp4">
+                </video>
+                <figcaption>
+                  <span class="project-card__category">Data Center</span>
+                  <span class="project-category">GRUPO CHUFANI S.A. DE C.V.</span>
+                  <div class="project-title-row">
+                    <strong>Data Center Microsoft Lote 10</strong>
+                    <button class="project-detail-toggle" type="button" aria-expanded="false" aria-controls="project-desc-11" aria-label="Mostrar detalles de Data Center Microsoft Lote 10">
+                      <span class="project-detail-arrow" aria-hidden="true"></span>
+                    </button>
+                  </div>
+                  <div class="project-description" id="project-desc-11" aria-hidden="true">
+                    <span class="project-description-field"><span class="project-description-label">Descripción:</span> Instalación de tierras físicas, charolas, tuberías y cableado especializado, conexión de tableros, PDU, MSB, UPS y ATS, así como pruebas y entrega operativa.</span>
+                    <span class="project-description-field"><span class="project-description-label">Personal:</span> 180 trabajadores</span>
+                    <span class="project-description-field"><span class="project-description-label">Lugar:</span> Parque Industrial VESTA, Querétaro</span>
+                    <span class="project-description-field"><span class="project-description-label">Fecha:</span> Sep de 2023 – Abr de 2024</span>
+                  </div>
+                </figcaption>
+              </figure>
+
+              <figure class="project-card reveal" data-project-card data-category="infraestructura-electrica construccion">
+                <video class="project-card__video" muted playsinline preload="metadata" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback" poster="img/OIL&amp;GAS-1.jpg" aria-hidden="true">
+                  <source src="videos/OIL-GAS VIDEO2.mp4" type="video/mp4">
+                </video>
+                <figcaption>
+                  <span class="project-card__category">Infraestructura eléctrica</span>
+                  <span class="project-category">SECTOR ENERGÉTICO</span>
+                  <div class="project-title-row">
+                    <strong>OIL &amp; GAS</strong>
+                    <button class="project-detail-toggle" type="button" aria-expanded="false" aria-controls="project-desc-12" aria-label="Mostrar detalles de OIL &amp; GAS">
+                      <span class="project-detail-arrow" aria-hidden="true"></span>
+                    </button>
+                  </div>
+                  <div class="project-description" id="project-desc-12" aria-hidden="true">
+                    <span class="project-description-field"><span class="project-description-label">Descripción:</span> Ejecución de instalaciones en media y baja tensión, instrumentación, automatización, montaje de equipos electromecánicos, tableros de control y pruebas de puesta en marcha.</span>
+                    <span class="project-description-field"><span class="project-description-label">Personal:</span> 80 trabajadores</span>
+                  </div>
+                </figcaption>
+              </figure>
+
+              <figure class="project-card reveal" data-project-card data-category="hvac construccion">
+                <video class="project-card__video" muted playsinline preload="metadata" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback" poster="img/COCA-COLA OXXO.jpg" aria-hidden="true">
+                  <source src="videos/OXXO VIDEO2.mp4" type="video/mp4">
+                </video>
+                <figcaption>
+                  <span class="project-card__category">HVAC</span>
+                  <div class="project-title-row">
+                    <strong>Coca-Cola FEMSA, S.A.B. de C.V.</strong>
+                    <button class="project-detail-toggle" type="button" aria-expanded="false" aria-controls="project-desc-13" aria-label="Mostrar detalles de Coca-Cola FEMSA, S.A.B. de C.V.">
+                      <span class="project-detail-arrow" aria-hidden="true"></span>
+                    </button>
+                  </div>
+                  <div class="project-description" id="project-desc-13" aria-hidden="true">
+                    <span class="project-description-field"><span class="project-description-label">Descripción:</span> Administración y atención de 85 sucursales, realizando mantenimiento de aire acondicionado, refrigeración, instalaciones eléctricas, identificación de circuitos y balanceo de cargas.</span>
+                    <span class="project-description-field"><span class="project-description-label">Personal:</span> 20 trabajadores</span>
+                    <span class="project-description-field"><span class="project-description-label">Lugar:</span> Durango, incluyendo sucursales locales y foráneas</span>
+                  </div>
+                </figcaption>
+              </figure>
+
+              <figure class="project-card reveal" data-project-card data-category="desarrollos construccion">
+                <video class="project-card__video" muted playsinline preload="metadata" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback" poster="img/ALTAMAR-1.jpg" aria-hidden="true">
+                  <source src="videos/ISLA SIRENA.mp4" type="video/mp4">
+                </video>
+                <figcaption>
+                  <span class="project-card__category">Desarrollos inmobiliarios</span>
+                  <div class="project-title-row">
+                    <strong>ALTAMAR</strong>
+                    <button class="project-detail-toggle" type="button" aria-expanded="false" aria-controls="project-desc-15" aria-label="Mostrar detalles de ALTAMAR">
+                      <span class="project-detail-arrow" aria-hidden="true"></span>
+                    </button>
+                  </div>
+                  <div class="project-description" id="project-desc-15" aria-hidden="true">
+                    <span class="project-description-field"><span class="project-description-label">Descripción:</span> Desarrollo de identidad y concepto residencial, análisis de viabilidad, renders, estudios de suelo, planeación de infraestructura eléctrica y de agua y coordinación de permisos.</span>
+                    <span class="project-description-field"><span class="project-description-label">Personal:</span> 10 trabajadores</span>
+                    <span class="project-description-field"><span class="project-description-label">Lugar:</span> Tuxpan, Veracruz</span>
+                    <span class="project-description-field"><span class="project-description-label">Fecha:</span> En desarrollo</span>
+                  </div>
+                </figcaption>
+              </figure>
+
+              <figure class="project-card reveal" data-project-card data-category="desarrollos construccion">
+                <video class="project-card__video" muted playsinline preload="metadata" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback" poster="img/DEPAS-1.jpg" aria-hidden="true">
+                  <source src="videos/DEPAS VIDEO2.mp4" type="video/mp4">
+                </video>
+                <figcaption>
+                  <span class="project-card__category">Desarrollos inmobiliarios</span>
+                  <span class="project-category">DEPARTAMENTOS</span>
+                  <div class="project-title-row">
+                    <strong>ASCEND</strong>
+                    <button class="project-detail-toggle" type="button" aria-expanded="false" aria-controls="project-desc-16" aria-label="Mostrar detalles de ASCEND">
+                      <span class="project-detail-arrow" aria-hidden="true"></span>
+                    </button>
+                  </div>
+                  <div class="project-description" id="project-desc-16" aria-hidden="true">
+                    <span class="project-description-field"><span class="project-description-label">Descripción:</span> Desarrollo de imagen y concepto del proyecto, estudios de mercado, planos arquitectónicos, renders, mecánica de suelo, infraestructura eléctrica e hidráulica y gestión de permisos.</span>
+                    <span class="project-description-field"><span class="project-description-label">Personal:</span> 7 trabajadores</span>
+                    <span class="project-description-field"><span class="project-description-label">Lugar:</span> Puebla capital</span>
+                    <span class="project-description-field"><span class="project-description-label">Fecha:</span> En desarrollo</span>
+                  </div>
+                </figcaption>
+              </figure>
+
+              <figure class="project-card reveal" data-project-card data-category="desarrollos infraestructura-electrica">
+                <video class="project-card__video" muted playsinline preload="metadata" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback" poster="img/RUBA-2.jpg" aria-hidden="true">
+                  <source src="videos/RUBA 2 VIDEO2.mp4" type="video/mp4">
+                </video>
+                <figcaption>
+                  <span class="project-card__category">Desarrollos inmobiliarios</span>
+                  <div class="project-title-row">
+                    <strong>RUBA DESARROLLOS S.A. DE C.V.</strong>
+                    <button class="project-detail-toggle" type="button" aria-expanded="false" aria-controls="project-desc-17" aria-label="Mostrar detalles de RUBA DESARROLLOS S.A. DE C.V.">
+                      <span class="project-detail-arrow" aria-hidden="true"></span>
+                    </button>
+                  </div>
+                  <div class="project-description" id="project-desc-17" aria-hidden="true">
+                    <span class="project-description-field"><span class="project-description-label">Descripción:</span> Nivelación y compactación del terreno para 65 plataformas residenciales, instalación de tubería PAD, registros, transformadores, redes de media y baja tensión y alumbrado.</span>
+                    <span class="project-description-field"><span class="project-description-label">Personal:</span> 10 trabajadores</span>
+                    <span class="project-description-field"><span class="project-description-label">Lugar:</span> Angelópolis III</span>
+                    <span class="project-description-field"><span class="project-description-label">Fecha:</span> 2026</span>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <button class="project-carousel-button project-carousel-button-next" type="button" aria-label="Proyecto siguiente" data-project-next></button>
+        </div>
+      </section>
+
+      <section class="section safety-section" id="seguridad" aria-labelledby="safety-title">
+        <div class="container safety-layout">
+          <div class="section-copy safety-copy reveal">
+            <p class="section-kicker">LÍNEA DE SEGURIDAD</p>
+            <h2 id="safety-title">Tu voz protege a nuestra gente y fortalece cada proyecto</h2>
+            <p class="safety-description">
+              Un canal confidencial para reportar acoso, violencia, riesgo de seguridad o cualquier situación que afecte el bienestar y el desempeño en obra. Escucharte nos permite prevenir, actuar y cuidar a quienes hacen posible cada proyecto.
+            </p>
+            <div class="safety-info" aria-label="Información de la Línea de Seguridad">
+              <div class="safety-info-item">
+                <span class="safety-info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path d="M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" />
+                    <path d="M2.5 21a6.5 6.5 0 0 1 13 0" />
+                    <path d="M17 10a3 3 0 1 0 0-6" />
+                    <path d="M18.5 20a5 5 0 0 0-3-4.6" />
+                  </svg>
+                </span>
+                <span class="safety-info-text safety-info-text--metric">
+                  <span><strong>+300</strong> colaboradores</span>
+                  <span>en toda la República</span>
+                </span>
+              </div>
+              <div class="safety-info-item">
+                <span class="safety-info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path d="M12 3 20 7v5c0 5-3.4 8-8 9-4.6-1-8-4-8-9V7l8-4Z" />
+                  </svg>
+                </span>
+                <span class="safety-info-text">
+                  <span>Escuchar también</span>
+                  <span>es proteger.</span>
+                </span>
+              </div>
+            </div>
+            <div class="safety-actions">
+              <a class="button button-primary safety-cta" href="reporte-anonimo.html">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M7 11V8a5 5 0 0 1 10 0v3" />
+                  <rect x="5" y="11" width="14" height="10" rx="2" />
+                  <path d="M12 15v2" />
+                </svg>
+                INICIAR REPORTE ANÓNIMO
+              </a>
+              <p class="safety-note">
+                No solicitamos nombre, teléfono ni correo. Solo se pedirá el código
+                del proyecto, descripción de los hechos y evidencia opcional.
+              </p>
+            </div>
+          </div>
+
+          <div class="safety-commitments reveal" aria-label="Compromisos de la Línea de Seguridad">
+            <figure class="safety-visual">
+              <img src="img/inge-1.jpg" alt="Colaboradores de CEMATIZ usando equipo de protección personal durante supervisión en obra" data-fallback="Colaboradores CEMATIZ" />
+            </figure>
+            <article class="safety-card">
+              <span class="safety-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M7 11V8a5 5 0 0 1 10 0v3" />
+                  <rect x="5" y="11" width="14" height="10" rx="2" />
+                  <path d="M12 15v2" />
+                </svg>
+              </span>
+              <h3>Confidencialidad</h3>
+              <p>Tu reporte es anónimo y se maneja con total discreción</p>
+            </article>
+            <article class="safety-card">
+              <span class="safety-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M12 3 20 7v5c0 5-3.4 8-8 9-4.6-1-8-4-8-9V7l8-4Z" />
+                  <path d="m8.5 12.5 2.2 2.2 4.8-5" />
+                </svg>
+              </span>
+              <h3>Prevención</h3>
+              <p>Detectamos riesgos y actuamos antes de que escalen.</p>
+            </article>
+            <article class="safety-card">
+              <span class="safety-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" />
+                  <path d="M2.5 21a6.5 6.5 0 0 1 13 0" />
+                  <path d="M17 10a3 3 0 1 0 0-6" />
+                  <path d="M18.5 20a5 5 0 0 0-3-4.6" />
+                </svg>
+              </span>
+              <h3>Acompañamiento</h3>
+              <p>Estamos cerca de nuestra gente para orientar, atender y dar seguimiento.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section crm-section" id="crm" aria-labelledby="crm-title">
+        <div class="container crm-layout">
+          <div class="section-copy crm-copy reveal">
+            <p class="section-kicker crm-kicker">CONTROL Y TRANSPARENCIA DE OBRA</p>
+            <h2 id="crm-title">Tu obra siempre bajo control</h2>
+            <p class="crm-description">
+              En CEMATIZ damos seguimiento profesional a cada proyecto con tecnología especializada. El cliente puede revisar avances, evidencia, documentos y pendientes desde un mismo lugar.
+            </p>
+            <div class="crm-highlight">
+              <span class="crm-highlight-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M12 3 5 6v5c0 4.4 2.8 8.3 7 9.8 4.2-1.5 7-5.4 7-9.8V6l-7-3Z" />
+                  <path d="m9.5 12 1.8 1.8 3.7-4" />
+                </svg>
+              </span>
+              <strong>No solo te reportamos avances: te damos visibilidad para comprobarlos.</strong>
+            </div>
+            <div class="crm-benefits" aria-label="Beneficios de seguimiento Buildpeer">
+              <article class="crm-benefit-card">
+                <span class="crm-benefit-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path d="M4 19V5" />
+                    <path d="M4 19h16" />
+                    <path d="M8 16v-5" />
+                    <path d="M12 16V8" />
+                    <path d="M16 16v-7" />
+                  </svg>
+                </span>
+                <h3>Avances en tiempo real</h3>
+              </article>
+              <article class="crm-benefit-card">
+                <span class="crm-benefit-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path d="M5 8h3l1.5-2h5L16 8h3v10H5V8Z" />
+                    <path d="M12 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                  </svg>
+                </span>
+                <h3>Evidencia fotográfica</h3>
+              </article>
+              <article class="crm-benefit-card">
+                <span class="crm-benefit-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path d="M4 6h6l2 2h8v10H4V6Z" />
+                    <path d="M8 13h8" />
+                    <path d="M8 16h5" />
+                  </svg>
+                </span>
+                <h3>Control documental</h3>
+              </article>
+              <article class="crm-benefit-card">
+                <span class="crm-benefit-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path d="M12 3 5 6v5c0 4.4 2.8 8.3 7 9.8 4.2-1.5 7-5.4 7-9.8V6l-7-3Z" />
+                    <path d="m9.5 12 1.7 1.7 3.8-4.1" />
+                  </svg>
+                </span>
+                <h3>Mayor confianza</h3>
+              </article>
+            </div>
+            <p class="crm-note">
+              <span class="crm-note-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" />
+                  <path d="M4.5 21a7.5 7.5 0 0 1 15 0" />
+                </svg>
+              </span>
+              El cliente también accede al seguimiento de su obra, reportes y evidencia desde cualquier lugar.
+            </p>
+          </div>
+
+          <figure class="crm-visual reveal">
+            <div class="buildpeer-logo-wrap" aria-hidden="true">
+              <img class="buildpeer-logo" src="img/buildpeer-negro.png" alt="" />
+            </div>
+            <img src="img/celulares.png" alt="Vista móvil de Buildpeer en celulares" data-fallback="Buildpeer en celulares" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section clients-section" id="clientes" aria-labelledby="clients-title">
+        <div class="container clients-container">
+          <p class="section-kicker clients-kicker" id="clients-title">NUESTROS CLIENTES</p>
+          <div class="clients-marquee" aria-label="Logotipos de clientes de CEMATIZ">
+            <div class="clients-track">
+              <div class="clients-group">
+                <img class="clients-logo" src="img/DIRESA-1.png" alt="DIRESA" />
+                <img class="clients-logo" src="img/Electroabastos.png" alt="Electroabastos" />
+                <img class="clients-logo" src="img/GRUPO ARTEC33.png" alt="Grupo Artec33" />
+                <img class="clients-logo" src="img/tedudarq.jpg" alt="Tedudarq" />
+                <img class="clients-logo" src="img/comelec-1.png" alt="COMELEC" />
+                <img class="clients-logo" src="img/Roselli Negro Transparente.png" alt="Roselli" />
+                <img class="clients-logo" src="img/LOGO TIERRA &amp; CAPITAL 1.png" alt="Tierra &amp; Capital" />
+                <img class="clients-logo" src="img/Logo-SILMEQ-Colores-Transparente-CHICO.png" alt="SILMEQ" />
+                <img class="clients-logo" src="img/BIM-1.png" alt="BIM" />
+              </div>
+              <div class="clients-group" aria-hidden="true">
+                <img class="clients-logo" src="img/DIRESA-1.png" alt="" />
+                <img class="clients-logo" src="img/Electroabastos.png" alt="" />
+                <img class="clients-logo" src="img/GRUPO ARTEC33.png" alt="" />
+                <img class="clients-logo" src="img/tedudarq.jpg" alt="" />
+                <img class="clients-logo" src="img/comelec-1.png" alt="" />
+                <img class="clients-logo" src="img/Roselli Negro Transparente.png" alt="" />
+                <img class="clients-logo" src="img/LOGO TIERRA &amp; CAPITAL 1.png" alt="" />
+                <img class="clients-logo" src="img/Logo-SILMEQ-Colores-Transparente-CHICO.png" alt="" />
+                <img class="clients-logo" src="img/BIM-1.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contacto" aria-labelledby="contact-title">
+        <div class="container contact-layout">
+          <div class="section-copy contact-copy reveal">
+            <p class="section-kicker">CONTACTO</p>
+            <h2 id="contact-title">Cuéntanos de tu proyecto</h2>
+            <p>
+              Comparte la información general y nuestro equipo podrá orientar
+              el siguiente paso: visita técnica, cotización, revisión de alcance
+              o seguimiento comercial.
+            </p>
+            <div class="contact-actions">
+              <a class="button button-secondary contact-whatsapp" href="https://wa.me/2225223720" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp de CEMATIZ">WHATSAPP</a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" action="send-contact.php" method="POST" data-contact-form data-validate-form novalidate>
+            <div class="form-honeypot" aria-hidden="true">
+              <label for="contact-empresa-web">Empresa web</label>
+              <input id="contact-empresa-web" class="contact-hp" name="empresa_web" type="text" tabindex="-1" autocomplete="off" />
+            </div>
+            <div class="form-row">
+              <label for="email">Correo</label>
+              <input id="email" name="correo" type="email" autocomplete="email" required />
+            </div>
+            <div class="form-row">
+              <label for="phone">Teléfono</label>
+              <input id="phone" name="telefono" type="tel" autocomplete="tel" required />
+            </div>
+            <div class="form-row form-row-full">
+              <label for="service">Servicio de interés</label>
+              <select id="service" name="servicio" required>
+                <option value="">Selecciona una opción</option>
+                <option>Infraestructura eléctrica</option>
+                <option>Instalaciones y sistemas</option>
+                <option>Ingeniería y gestión</option>
+                <option>Construcción integral</option>
+                <option>Mantenimiento y operación</option>
+                <option>Servicios HVAC</option>
+                <option>Importación de material</option>
+                <option>Gestoría y trámites</option>
+                <option>Sistemas especiales</option>
+              </select>
+            </div>
+            <div class="form-row form-row-full">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="mensaje" rows="5" required></textarea>
+            </div>
+            <button class="button button-primary form-row-full" type="submit">Enviar solicitud</button>
+            <p class="form-status form-row-full" role="status" aria-live="polite" data-form-status></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div class="contact-success-overlay" role="dialog" aria-modal="true" aria-labelledby="contactSuccessTitle" aria-describedby="contactSuccessText" data-contact-success-modal>
+      <div class="contact-success-modal">
+        <img src="img/Logo Cematiz.png" alt="CEMATIZ" class="contact-success-logo" />
+        <h2 class="contact-success-title" id="contactSuccessTitle">ENVIADO</h2>
+        <p class="contact-success-text" id="contactSuccessText">Su correo ya fue mandando correctamente. A la brevedad nuestro equipo se pondrá en contacto.</p>
+        <button type="button" class="contact-success-close" data-contact-success-close>CERRAR</button>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-layout">
+        <div class="footer-brand-block">
+          <a class="footer-brand" href="#inicio" aria-label="Volver al inicio">
+            <!-- Sustituir por img/logo-cematiz-blanco.png cuando exista el archivo oficial del manual. -->
+            <img src="img/Logo blanco.png" alt="CEMATIZ" data-fallback="C" />
+          </a>
+          <p>Construcción, infraestructura eléctrica y servicios técnicos especializados.</p>
+        </div>
+
+        <div class="footer-column">
+          <h2>Menú</h2>
+          <a href="#acerca">Acerca</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#seguridad">Línea de Seguridad</a>
+        </div>
+
+        <div class="footer-column">
+          <h2>Servicios</h2>
+          <a href="#servicios">Infraestructura eléctrica</a>
+          <a href="#servicios">HVAC</a>
+          <a href="#servicios">Construcción integral</a>
+          <a href="#servicios">Sistemas especiales</a>
+        </div>
+
+        <div class="footer-column">
+          <h2>Contacto</h2>
+          <a href="mailto:contacto@cematiz.com.mx">contacto@cematiz.com.mx</a>
+          <a href="https://wa.me/2225223720" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a href="aviso-privacidad.html">Aviso de privacidad</a>
+          <div class="social-links" aria-label="Redes sociales CEMATIZ">
+            <a href="https://www.linkedin.com/company/cematiz/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn CEMATIZ">
+              <img src="img/naranja.in.png" alt="LinkedIn CEMATIZ" />
+            </a>
+            <a href="https://www.facebook.com/share/199yB4JPxG/" target="_blank" rel="noopener noreferrer" aria-label="Facebook CEMATIZ">
+              <img src="img/naranja.face.png" alt="Facebook CEMATIZ" />
+            </a>
+            <a href="https://www.instagram.com/cematiz2025/" target="_blank" rel="noopener noreferrer" aria-label="Instagram CEMATIZ">
+              <img src="img/naranja.inst.png" alt="Instagram CEMATIZ" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; <span data-year></span> CEMATIZ. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
