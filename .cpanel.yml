@@ -1,0 +1,17 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/n2js8w5ces09/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp reporte-anonimo.html $DEPLOYPATH
+    - /bin/cp aviso-privacidad.html $DEPLOYPATH
+    - /bin/cp send-contact.php $DEPLOYPATH
+    - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R img $DEPLOYPATH
+    - /bin/cp -R js $DEPLOYPATH
+    - /bin/cp -R videos $DEPLOYPATH
+    - /bin/cp favicon.ico $DEPLOYPATH
+    - /bin/cp favicon-16x16.png $DEPLOYPATH
+    - /bin/cp favicon-32x32.png $DEPLOYPATH
+    - /bin/cp apple-icon-180x180.png $DEPLOYPATH
+    - /bin/cp browserconfig.xml $DEPLOYPATH
